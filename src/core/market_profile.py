@@ -48,7 +48,10 @@ US_PROFILE = MarketProfile(
         "US stock market",
         "S&P 500 NASDAQ",
     ],
-    prompt_index_hint="分析标普500、纳斯达克、道指等各指数走势特点",
+    prompt_index_hint="
+    角色设定： “你是有 20 年经验的华尔街宏观策略分析师。”
+    任务拆解： 1. 提取今日关键宏观数据（预期值 vs 前值）。2. 汇总隔夜/盘前重大公司新闻。3. 分析深度： 不要只罗列新闻，要解释“为什么这很重要”以及“市场情绪可能如何反应”。
+    格式要求： 包含【今日看点】、【深度解读】、【风险提示】三个板块。分析标普500、纳斯达克、道指等各指数走势特点",
     has_market_stats=False,
     has_sector_rankings=False,
 )
