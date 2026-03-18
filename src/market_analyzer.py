@@ -473,7 +473,8 @@ Lagging: {bottom_sectors_text if bottom_sectors_text else "N/A"}"""
             return f"""You are a professional US/A/H market analyst. Please produce a concise US market recap report based on the data below.
 
 [Requirements]
-- Output pure Markdown only
+#- Output pure Markdown only
+- Output pure pdf with pictures and text
 - No JSON
 - No code blocks
 - Use emoji sparingly in headings (at most one per heading)
