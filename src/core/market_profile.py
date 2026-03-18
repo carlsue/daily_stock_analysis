@@ -42,11 +42,13 @@ CN_PROFILE = MarketProfile(
 
 US_PROFILE = MarketProfile(
     region="us",
-    mood_index_code="SPX",
+    mood_index_code="GSPC",
     news_queries=[
         "美股 大盘",
         "US stock market",
         "S&P 500 NASDAQ",
+        "Federal Reserve interest rate",
+        "Wall Street market analysis",
     ],
     prompt_index_hint="""
     角色设定： “你是有 20 年经验的华尔街宏观策略分析师。”
