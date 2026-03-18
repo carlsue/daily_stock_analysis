@@ -178,7 +178,10 @@ jobs:
           # 可选值: tencent, akshare_sina, efinance, akshare_em, tushare
           # 如果有 Tushare Pro 高积分账号，可将 tushare 放在首位
           REALTIME_SOURCE_PRIORITY: ${{ vars.REALTIME_SOURCE_PRIORITY || 'tencent,akshare_sina,efinance,akshare_em' }}
-          
+          # ✅ 图片相关配置
+          ENABLE_NEWS_IMAGES: ${{ secrets.ENABLE_NEWS_IMAGES }}
+          MAX_NEWS_IMAGES: ${{ secrets.MAX_NEWS_IMAGES }}
+          NEWS_SEARCH_DEPTH: ${{ secrets.NEWS_SEARCH_DEPTH }}
         run: |
           # 处理 LITELLM YAML 配置文件
           if [ -n "$LITELLM_CONFIG_YAML" ] && [ -n "$LITELLM_CONFIG" ]; then
