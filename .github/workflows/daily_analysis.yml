@@ -52,7 +52,8 @@ jobs:
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
-      
+              # ✅ 添加图片处理库
+          pip install Pillow requests
       - name: 创建必要目录
         run: |
           mkdir -p data logs reports
